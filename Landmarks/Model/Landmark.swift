@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 
-struct Landmark: Hashable, Codable { // Codable is important so we can read data easier later
+struct Landmark: Hashable, Codable, Identifiable { // Codable is important so we can read data easier later
     var id: Int
     var name: String
     var park: String
